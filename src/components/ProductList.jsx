@@ -1,8 +1,9 @@
 import Product from "./Product";
+import "../css/product.css";
 
 const ProductList = ({ products }) => {
   return (
-    <div>
+    <div className="productcardContainer">
       {products.map((product, index) => (
         <Product
           key={index}

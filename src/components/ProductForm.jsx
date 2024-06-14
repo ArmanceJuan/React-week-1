@@ -4,7 +4,7 @@ const ProductForm = ({ addProduct }) => {
   const [productInfos, setProductInfos] = useState({
     name: "",
     description: "",
-    price: "",
+    price: 0,
   });
 
   const handleAddProduct = (event) => {
@@ -21,7 +21,7 @@ const ProductForm = ({ addProduct }) => {
     setProductInfos({
       name: "",
       description: "",
-      price: "",
+      price: 0,
     });
   };
 
@@ -49,6 +49,7 @@ const ProductForm = ({ addProduct }) => {
 
         <label>Price : </label>
         <input
+          type="number"
           value={productInfos.price}
           onChange={(event) =>
             setProductInfos({ ...productInfos, price: event.target.value })

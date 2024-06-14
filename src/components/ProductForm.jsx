@@ -1,25 +1,28 @@
 import { useRef, useState, useReducer } from "react";
 import "../css/productForm.css";
 
+// Test useReducer
+
+// const productReducer = {//
+//  name: "",
+//  description: "",
+//  price: 0,
+// };
+// const formRecuder = (state, action) => {
+//   switch (action.type) {
+//     case "REMOVE_NAME":
+//       return { ...state, name: action.value };
+//     default:
+//       return state;
+//   }
+// };
+
+//
+
 const ProductForm = ({ addProduct }) => {
   const nameRef = useRef(null);
   const descriptionRef = useRef(null);
   const priceRef = useRef(null);
-
-  // Test useReducer
-  // const productReducer = {
-  //   name: "",
-  //   description: "",
-  //   price: 0,
-  // };
-  // const formRecuder = (state, action) => {
-  //   switch (action.type) {
-  //     case "REMOVE_NAME": {
-  //     }
-  //   }
-  // };
-
-  //
 
   const [productInfos, setProductInfos] = useState({
     name: "",

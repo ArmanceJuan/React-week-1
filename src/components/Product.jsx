@@ -1,9 +1,13 @@
+import "../css/product.css";
+
 const Product = ({ name, description, price }) => {
   return (
-    <div>
+    <div className="productcard">
       <h2>{name}</h2>
-      <p>{description}</p>
-      <p>{price} €</p>
+      <div className="productcardinfos">
+        <p>{description}</p>
+        <p>{price} €</p>
+      </div>
     </div>
   );
 };

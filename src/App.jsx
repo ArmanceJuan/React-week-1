@@ -27,7 +27,8 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="container">
+      <h2>Add Product</h2>
       <ProductForm addProduct={addProductList} />
       <h2>Product List</h2>
       <ProductList products={products} />
